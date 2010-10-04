@@ -4,7 +4,6 @@
 ; projects should be compatible with.
 
 core = 6.x
-projects[] = drupal
 
 
 ; Projects
@@ -17,66 +16,51 @@ projects[] = drupal
 ; desirable for a project, you will want to use the keyed syntax combined with
 ; some options.
 
-: CCK
-projects[cck][subdir] = "contrib" 
-projects[content_taxonomy][subdir] = "contrib"
-projects[filefield][subdir] = "contrib"
+projects[] = drupal
 
-; CTOOLS
-projects[ctools][subdir] = "contrib"
-
-; CONTEXT
-projects[context][subdir] = "contrib"
-
-; FEATURES
-projects[features][subdir] = "contrib"
-
-; FLAG
-projects[flag][subdir] = "contrib"
-
-; FORM ELEMENTS
-projects[hierarchical_select][subdir] = "contrib"
-
-; IMAGECACHE
-projects[imageapi][subdir] = "contrib"
-projects[imagecache][subdir] = "contrib"
-
-; OTHER
+projects[admin]      [subdir] = "contrib" 
 projects[author_pane][subdir] = "contrib"
 projects[auto_nodetitle][subdir] = "contrib"
+projects[ctools][subdir] = "contrib"
+projects[cck][subdir] = "contrib" 
+projects[content_taxonomy][subdir] = "contrib"
+projects[context][subdir] = "contrib"
 projects[diff][subdir] = "contrib"
+projects[features][subdir] = "contrib"
+projects[filefield][subdir] = "contrib"
+projects[flag][subdir] = "contrib"
 projects[gravatar][subdir] = "contrib"
+projects[hierarchical_select][subdir] = "contrib"
+projects[imageapi][subdir] = "contrib"
+projects[imagecache][subdir] = "contrib"
+projects[imagefield][subdir] = "contrib"
+projects[jquery_ui][subdir] = "contrib"
 projects[lightbox2][subdir] = "contrib"
+projects[link][subdir] = "contrib"
 projects[pathauto][subdir] = "contrib"
+projects[quicktabs][subdir] = "contrib"
+projects[rules][subdir] = "contrib"
 projects[sharethis][subdir] = "contrib"
 projects[strongarm][subdir] = "contrib"
 projects[token][subdir] = "contrib"
-
-; RULES
-projects[rules][subdir] = "contrib"
-
-; UI
-projects[jquery_ui][subdir] = "contrib"
-
-; VIEWS
 projects[views][subdir] = "contrib"
 projects[views_attach][subdir] = "contrib"
-projects[viewsdisplaytabs][subdir] = "contrib"
-
-; VOTING
 projects[vote_up_down][subdir] = "contrib"
 projects[votingapi][subdir] = "contrib"
 
 
+; Theme
+projects[rubik][type] = "theme"
+project[tao][type] ="theme"
+
+; External Libraries
+libraries[jquery_ui][download][type] = "get"
+libraries[jquery_ui][download][url] = "http://jquery- ui.googlecode.com/files/jquery.ui-1.6.zip"
+libraries[jquery_ui][destination] = "modules/contrib/jquery_ui
 
 
 
-
-; Clone a project from github.
-
-projects[tao][type] = theme
-projects[tao][download][type] = git
-projects[tao][download][url] = git://github.com/developmentseed/tao.git
+; Open Hippel features from github.
 
 projects[hippelicious][type] = theme
 projects[hippelicious][download][type] = git
@@ -87,4 +71,18 @@ projects[hippel_idea][subdir] = "custom"
 projects[hippel_idea][download][type] = git
 projects[hippel_idea][download][url] = git://github.com/openhippel/hippel_idea.git
 
+projects[hippel_voices][type] = module
+projects[hippel_voices][subdir] = "custom"
+projects[hippel_voices][download][type] = git
+projects[hippel_voices][download][url] = git://github.com/openhippel/hippel_voices.git
+
+projects[hippel_steps][type] = module
+projects[hippel_steps][subdir] = "custom"
+projects[hippel_steps][download][type] = git
+projects[hippel_steps][download][url] = git://github.com/openhippel/hippel_steps.git
+
+projects[hippel_context][type] = module
+projects[hippel_context][subdir] = "custom"
+projects[hippel_context][download][type] = git
+projects[hippel_context][download][url] = git://github.com/openhippel/hippel_context.git
 
