@@ -16,13 +16,14 @@ core = 6.x
 ; desirable for a project, you will want to use the keyed syntax combined with
 ; some options.
 
-projects[] = drupal
+projects[drupal] = 6.19
 
-projects[admin]      [subdir] = "contrib" 
+projects[admin][subdir] = "contrib" 
 projects[author_pane][subdir] = "contrib"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[ctools][subdir] = "contrib"
 projects[cck][subdir] = "contrib" 
+projects[content_profile][subdir] = "contrib"
 projects[content_taxonomy][subdir] = "contrib"
 projects[context][subdir] = "contrib"
 projects[diff][subdir] = "contrib"
